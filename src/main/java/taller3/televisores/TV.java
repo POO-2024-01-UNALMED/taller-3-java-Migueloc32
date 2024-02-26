@@ -16,6 +16,7 @@ public class TV{
 	    this.estado = estado;
 	    this.volumen = 1;
 	    this.control = null;
+	    numTV++;
 	  }
 	  public Marca getMarca() {
 	    return this.marca;

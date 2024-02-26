@@ -4,26 +4,24 @@ public class Control{
 	  private TV tv;
 
 	  public void canalUp(){
-	    if (this.tv.getEstado() & this.tv.getCanal()<120){
+	    if (this.tv.getEstado() && this.tv.getCanal()<120){
 	      this.tv.setCanal(this.tv.getCanal()+1);
 	    }
 	  }
 
 	  public void canalDown(){
-	    if (this.tv.getEstado() & this.tv.getCanal()>1)
+	    if (this.tv.getEstado() && this.tv.getCanal()>1)
 	      this.tv.setCanal(this.tv.getCanal()-1);
 	  }
 
 	  public void volumenUp(){
-	    if (this.tv.getEstado() & this.tv.getVolumen()<7)
+	    if (this.tv.getEstado() && this.tv.getVolumen()<7)
 	      this.tv.setVolumen(this.tv.getVolumen()+1);
 	    }
 
 	  public void volumenDown(){
-	    if (this.tv.getEstado() & this.tv.getVolumen()>0)
+	    if (this.tv.getEstado() && this.tv.getVolumen()>0)
 	      this.tv.setVolumen(this.tv.getVolumen()-1);
-
-	  
 	  }
 
 	  public void enlazar(TV tv){
@@ -38,12 +36,12 @@ public class Control{
 	        this.tv.turnOff();
 	    }
 	    public void setCanal(int canal) {
-	    	if (canal>=1 & canal<=120) {
+	    	if (canal>=1 && canal<=120 && this.tv.getEstado()) {
 	    		this.tv.setCanal(canal);
 	    	}
 	    }
 	    public void setVolumen(int volumen) {
-	    	if (volumen>=0 & volumen<=7) {
+	    	if (volumen>=0 && volumen<=7 && this.tv.getEstado()) {
 	    		this.tv.setVolumen(volumen);
 	    	}
 	    }
