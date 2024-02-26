@@ -18,7 +18,7 @@ public class TV{
 	    this.control = null;
 	  }
 	  public Marca getMarca() {
-	    return marca;
+	    return this.marca;
 	  }
 
 	    public void setMarca(Marca marca) {
@@ -26,7 +26,7 @@ public class TV{
 	    }
 
 	    public int getCanal() {
-	        return canal;
+	        return this.canal;
 	    }
 
 	    public void setCanal(int canal) {
@@ -34,7 +34,7 @@ public class TV{
 	    }
 
 	    public int getPrecio() {
-	        return precio;
+	        return this.precio;
 	    }
 
 	    public void setPrecio(int precio) {
@@ -43,7 +43,7 @@ public class TV{
 
 
 	    public int getVolumen() {
-	        return volumen;
+	        return this.volumen;
 	    }
 
 	    public void setVolumen(int volumen) {
@@ -51,7 +51,7 @@ public class TV{
 	    }
 
 	    public Control getControl() {
-	        return control;
+	        return this.control;
 	    }
 
 	    public void setControl(Control control) {
