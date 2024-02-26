@@ -30,4 +30,14 @@ public class Control{
 	    this.tv = tv;
 	    tv.setControl(this);
 	  }
+	    public void turnOn() {
+	        this.tv.turnOn();
+	    }
+
+	    public void turnOff() {
+	        this.tv.turnOff();
+	    }
+	    public void setCanal(int canal) {
+	    	this.tv.setCanal(canal);
+	    }
 	}
